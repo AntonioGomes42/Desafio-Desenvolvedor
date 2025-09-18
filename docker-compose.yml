@@ -1,0 +1,51 @@
+version: "1.0"
+name: desafio_desenvolvedor_stack
+services:
+
+  desafio.desenvolvedor.nginx:
+    image: nginx:latest
+    ports:
+      - "5080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - desafio.desenvolvedor.network
+    depends_on:
+      - desafio.desenvolvedor.api
+
+
+  desafio.desenvolvedor.api:
+    image: ${DOCKER_REGISTRY-}desafiodesenvolvedorapi
+    container_name: desafio.desenvolvedor.api
+    expose:
+      - 5050
+    build:
+      context: .
+      dockerfile: Desafio-Desenvolvedor.Api/Dockerfile
+    networks:
+      - desafio.desenvolvedor.network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5050
+    depends_on:
+      - desafio.desenvolvedor.database
+
+
+  desafio.desenvolvedor.database:
+    image: postgres:latest
+    container_name: desafio.desenvolvedor.database
+    environment:
+      - POSTGRES_DB=blog.posts
+      - POSTGRES_USER=posts.user
+      - POSTGRES_PASSWORD=posts@2025
+    networks:
+      - desafio.desenvolvedor.network
+    volumes:
+      - ./.containers/desafio-desenvolvedor-db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+
+networks:
+  desafio.desenvolvedor.network:
+    driver: bridge

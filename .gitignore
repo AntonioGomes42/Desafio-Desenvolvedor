@@ -1,4 +1,7 @@
 .vs/
+.containers/
+bin/
+obj/
 Desafio-Desenvolvedor.Domain/bin
 Desafio-Desenvolvedor.Domain/obj
 Desafio-Desenvolvedor.Application/bin

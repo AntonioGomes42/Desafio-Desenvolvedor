@@ -1,4 +1,5 @@
 using Desafio_Desenvolvedor.Api.Controllers;
+using Desafio_Desenvolvedor.Application.Interfaces;
 using Desafio_Desenvolvedor.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,10 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    using var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetRequiredService<IRepository>();
+    db.EnsureCreated();
 }
 
 app.MapBlogPostControllers();

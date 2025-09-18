@@ -53,6 +53,23 @@ namespace Desafio_Desenvolvedor.Infrastructure.Repository
             return post;
         }
 
+        public void EnsureCreated()
+        {
+            // Certifica que o banco de dados será criado, mesmo que o container do PostgreSQL ainda não esteja pronto para receber conexões.
+            while (true)
+            {
+                try
+                {
+                    _context.Database.EnsureCreated();
+                    break;
+                }
+                catch (Npgsql.NpgsqlException)
+                {
+                    Thread.Sleep(2 * 1000);
+                }
+            }
+        }
+
         public void Dispose()
         {
             _context.Dispose();

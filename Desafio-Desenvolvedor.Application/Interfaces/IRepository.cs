@@ -8,5 +8,6 @@ namespace Desafio_Desenvolvedor.Application.Interfaces
         Task CreatePostAsync(Post post, CancellationToken stoppingToken = default);
         Task<Post> GetPostByIdAsync(Guid id, CancellationToken stoppingToken = default);
         Task AddCommentToPostAsync(Guid postId, Comment comment, CancellationToken stoppingToken = default);
+        void EnsureCreated();
     }
 }
