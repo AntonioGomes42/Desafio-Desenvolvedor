@@ -3,11 +3,11 @@
 Este é um repositório que hospeda o projeto-desafio proposto pela 3C Hunting.
 
 ## Pré-Requisitos 
-- Docker Instalado na Máquina.
+- [Docker](https://www.docker.com/) instalado na máquina.
 
 ## Arquitetura do Projeto
 
-O projeto foi pensando para possuir uma arquitetura simples e que minimamente sirva para proddução.
+O projeto foi pensando para possuir uma arquitetura simples e que minimamente sirva para produção.
 
 ![Arquitetura do Projeto](./docs/img/arquitetura.png)
 
