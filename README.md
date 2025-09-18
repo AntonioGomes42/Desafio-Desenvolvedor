@@ -21,7 +21,8 @@ docker-compose up -d --build
 
 ## Possíveis Melhorias
 
-- Infra: Adição de Redis. (Melhoria Performance)
+- Infraestrutura: Adição de Redis. (Melhoria de performance)
+- Infraestrutura: Multiplas Intâncias da API, unido a um Load-balancer. (Melhoria de disponibilidade)
 - Segurança: Autenticação por Token. 
 - Segurança: Adição de Certificado SSL para HTTPS.
 - Código: Separação dos end-points em classes de Controllers individuais.
