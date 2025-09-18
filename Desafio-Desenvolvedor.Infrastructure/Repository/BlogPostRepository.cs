@@ -41,7 +41,7 @@ namespace Desafio_Desenvolvedor.Infrastructure.Repository
                                  .ToListAsync(stoppingToken);
         }
 
-        public async Task<Post?> GetPostByIdAsync(Guid id, CancellationToken stoppingToken = default)
+        public async Task<Post> GetPostByIdAsync(Guid id, CancellationToken stoppingToken = default)
         {
             Post? post = await _context.Posts
                                  .AsNoTracking()

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Desafio_Desenvolvedor.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Desafio-Desenvolvedor.Application\Desafio-Desenvolvedor.Application.csproj" />
+    <ProjectReference Include="..\Desafio-Desenvolvedor.Domain\Desafio-Desenvolvedor.Domain.csproj" />
+    <ProjectReference Include="..\Desafio-Desenvolvedor.Infrastructure\Desafio-Desenvolvedor.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
