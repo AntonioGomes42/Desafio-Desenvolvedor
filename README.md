@@ -19,5 +19,13 @@ Abre um terminal na raíz do projeto e execute o comando abaixo:
 docker-compose up -d --build
 ```
 
+## Possíveis Melhorias
+
+- Infra: Adição de Redis. (Melhoria Performance)
+- Segurança: Autenticação por Token. 
+- Segurança: Adição de Certificado SSL para HTTPS.
+- Código: Separação dos end-points em classes de Controllers individuais.
+- Documentação: Descrever melhor o README.md
+- Documentação: Detalhar melhor o Swagger.
 
 ## Author: @AntonioGomes42 (br.com.antoniogomes@mail.com)

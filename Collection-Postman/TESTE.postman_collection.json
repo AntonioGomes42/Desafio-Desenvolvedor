@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "55475c3f-1b11-48cf-832e-93d373279674",
+		"name": "TESTE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17369721"
+	},
+	"item": [
+		{
+			"name": "GET POSTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/posts",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET POST BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/posts/PONHA-O-ID-DO-POST-AQUI",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"PONHA-O-ID-DO-POST-AQUI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE POSTS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"Curiosidade sobre João Pessoa\",\r\n    \"Author\": \"Antonio Gomes\",\r\n    \"Content\": \"João Pessoa abriga a Ponta do Seixas, o ponto mais oriental das Américas, o que significa que o sol nasce ali primeiro em todo o continente. A cidade também é conhecida como a 'Porta do Sol' e tem a honra de ser a terceira cidade mais antiga do Brasil.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/posts",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE COMMENT ON POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    //\"Author\": \"user.2\",\r\n    \"Text\": \"Gostei bastante! Muito interessante!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/posts/PONHA-O-ID-DO-POST-AQUI/comments",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"PONHA-O-ID-DO-POST-AQUI",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
