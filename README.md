@@ -13,7 +13,7 @@ O projeto foi pensando para possuir uma arquitetura simples e que minimamente si
 
 ## Como Executar
 
-Abre um terminal na raíz do projeto e execute o comando abaixo:
+Abra um terminal na raíz do projeto e execute o comando abaixo:
 
 ```bash
 docker-compose up -d --build
