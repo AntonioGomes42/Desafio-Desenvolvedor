@@ -1,6 +1,6 @@
 ﻿namespace Desafio_Desenvolvedor.Domain.Entities
 {
-    public class BlogPost
+    public class Post
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public required string Title { get; set; }

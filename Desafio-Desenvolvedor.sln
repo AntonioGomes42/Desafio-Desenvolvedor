@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio-Desenvolvedor.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio-Desenvolvedor.Application", "Desafio-Desenvolvedor.Application\Desafio-Desenvolvedor.Application.csproj", "{02E8415C-D4CB-401D-82F8-6B943EDAE9A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio-Desenvolvedor.Infrastructure", "Desafio-Desenvolvedor.Infrastructure\Desafio-Desenvolvedor.Infrastructure.csproj", "{890B8C99-20FF-4485-971A-67918F5BB733}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{02E8415C-D4CB-401D-82F8-6B943EDAE9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02E8415C-D4CB-401D-82F8-6B943EDAE9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E8415C-D4CB-401D-82F8-6B943EDAE9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{890B8C99-20FF-4485-971A-67918F5BB733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890B8C99-20FF-4485-971A-67918F5BB733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890B8C99-20FF-4485-971A-67918F5BB733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890B8C99-20FF-4485-971A-67918F5BB733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

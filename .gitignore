@@ -1,3 +1,7 @@
 .vs/
 Desafio-Desenvolvedor.Domain/bin
 Desafio-Desenvolvedor.Domain/obj
+Desafio-Desenvolvedor.Application/bin
+Desafio-Desenvolvedor.Application/obj
+Desafio-Desenvolvedor.Infrastructure/bin
+Desafio-Desenvolvedor.Infrastructure/obj
